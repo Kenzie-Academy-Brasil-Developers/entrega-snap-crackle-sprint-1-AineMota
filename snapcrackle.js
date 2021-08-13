@@ -10,13 +10,13 @@ function snapCrackle(maxValue){
 
     for(let counter = 1; counter <= maxValue; counter++){
         
+        if(!(counter % 2 === 0)) {
+            message += 'Snap';
+        }
         if(counter % 5 === 0){
             message += 'Crackle';
 
         } 
-        if(!(counter % 2 === 0)) {
-            message += 'Snap';
-        }
      
         if(counter % 2 === 0 && !(counter % 5 === 0) ) {
             message += counter;
